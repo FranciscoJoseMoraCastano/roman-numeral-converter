@@ -1,0 +1,127 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background-color: #f4f4f9;
+  color: #2b2d42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2b2d42;
+  font-weight: bold;
+  text-align: center;
+}
+
+.formatted-text {
+  font-size: 1rem;
+  color: #8d99ae;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  margin-left: 6px;
+  color: #2b2d42;
+  text-align: left;
+}
+
+/* Align Input and Button */
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre el input y el botón */
+  flex-wrap: wrap; /* Para adaptarse en pantallas pequeñas */
+}
+
+input[type="number"] {
+  flex: 1;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #8d99ae;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #0b3d91;
+}
+
+button {
+  flex-shrink: 0;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0b3d91; /* Azul oscuro */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #08306b;
+  transform: translateY(-2px);
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2b2d42;
+  text-align: center;
+}
+
+/* Container Styling */
+.function-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.function-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 1.1rem;
+  }
+
+  .formatted-text {
+    font-size: 1.1rem;
+  }
+}

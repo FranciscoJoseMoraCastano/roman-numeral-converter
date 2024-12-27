@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Number Converter</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+    <!-- Roman Number Converter -->
+    <div class="function-container">
+        <h2>Roman Number Converter</h2>
+        <p class="formatted-text">
+            Función que toma un número arábigo y devuelve su equivalente en número romano (en mayúsculas)
+        </p>
+        <label for="roman-input">Introduce un número:</label>
+        <div class="input-group">
+            <input type="number" id="number" placeholder="Número a convertir...">
+            <button onclick="convertRoman()" id="convert-btn">Convertir</button>
+        </div>
+        <div class="result" id="output"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
